@@ -34,6 +34,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     USERNAME_FIELD = 'email'
 
+
 class Tag(models.Model):
     name = models.CharField(max_length=255)
     user = models.ForeignKey(
